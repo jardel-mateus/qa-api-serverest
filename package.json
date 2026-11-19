@@ -1,0 +1,12 @@
+{
+  "name": "qa-api-serverest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "newman run serverest.postman_collection.json -r cli,htmlextra --reporter-htmlextra-export relatorio/index.html --reporter-htmlextra-title \"ServeRest - testes de API\""
+  },
+  "devDependencies": {
+    "newman": "6.2.1",
+    "newman-reporter-htmlextra": "1.23.1"
+  }
+}
